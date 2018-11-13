@@ -1,0 +1,18 @@
+<resources>
+    <string name="API_KEY" translatable="false">ac90a902531e410dae6a0f11e41fbccb</string>
+
+    <string name="app_name">PopularMovies</string>
+    <string name="filter_option">filter</string>
+    <string name="popular_sort">Sort by popularity</string>
+    <string name="view_sort">Sort by views</string>
+    <string name="recent_sort">Sort by recency</string>
+    <string name="upcoming_sort">Sort by upcoming</string>
+    <string name="movie_votes">"Vote Average: "</string>
+    <string name="release_date">"Release date: "</string>
+    <string name="go_to_favourite">Go to favourite</string>
+    <string name="add_to_favourite">Add to favourite</string>
+    <string name="remove_favourite">Remove favourite</string>
+    <string name="review_button">See Reviews</string>
+
+    <string name="search">Search</string>
+</resources>

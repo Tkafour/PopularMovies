@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:title="@string/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/go_to_popular"
+        android:title="@string/go_to_favourite"
+        android:icon="@drawable/ic_go_to_favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/filter_option"
+        android:title="@string/filter_option"
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item
+                android:icon="@drawable/ic_popularity_icon"
+                android:id="@+id/popularity_menu"
+                android:title="@string/popular_sort" />
+            <item
+                android:icon="@drawable/ic_liked_icon"
+                android:id="@+id/liked_menu"
+                android:title="@string/view_sort" />
+            <item
+                android:icon="@drawable/ic_recent_icon"
+                android:id="@+id/recent_menu"
+                android:title="@string/recent_sort" />
+            <item
+                android:icon="@drawable/ic_upcoming_icon"
+                android:id="@+id/upcoming_menu"
+                android:title="@string/upcoming_sort" />
+
+
+        </menu>
+
+    </item>
+
+
+</menu>

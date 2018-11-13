@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fragment_movie_title"
+        style="@style/TextHeader"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/photo_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/fragment_movie_title"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_movie_title">
+
+        <ImageView
+            android:id="@+id/fragment_movie_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/fragment_release_date_text"
+                style="@style/TextBody"
+                android:text="@string/release_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/fragment_release_date"
+                style="@style/TextBodyAccent"
+                app:layout_constraintStart_toStartOf="@+id/fragment_release_date_text"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_release_date_text" />
+
+            <TextView
+                android:id="@+id/fragment_movie_votes_text"
+                style="@style/TextBody"
+                android:text="@string/movie_votes"
+                app:layout_constraintStart_toStartOf="@+id/fragment_release_date"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_release_date" />
+
+            <TextView
+                android:id="@+id/fragment_movie_votes"
+                style="@style/TextBodyAccent"
+                app:layout_constraintStart_toStartOf="@+id/fragment_movie_votes_text"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_movie_votes_text" />
+
+            <TextView
+                android:id="@+id/fragment_movie_description"
+                style="@style/TextBody"
+                app:layout_constraintStart_toStartOf="@+id/fragment_movie_votes"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_movie_votes"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragment_review_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/review_button"
+        app:layout_constraintStart_toStartOf="@+id/photo_container"
+        app:layout_constraintTop_toBottomOf="@+id/photo_container" />
+
+    <TextView
+        android:id="@+id/movie_review_text"
+        style="@style/TextBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/fragment_review_button"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_review_button" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/remove_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_remove_favourite"
+        android:title="@string/filter_option"
+        android:text="@string/remove_favourite"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/add_to_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_add_to_favourite"
+        android:title="@string/filter_option"
+        android:text="@string/add_to_favourite"
+        app:showAsAction="ifRoom"/>
+</menu>
